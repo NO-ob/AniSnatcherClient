@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller">
+    <HBox>
+        <Button fx:id="TorrentRefreshButton" onAction="#handleTorrents">Refresh</Button>
+        <CheckBox fx:id="forceUpdateBox" text="Force Update" />
+    </HBox>
+    <ListView fx:id="torrentList" prefHeight="560"></ListView>
+    <ListView fx:id="fileList" prefHeight="560"></ListView>
+</VBox>

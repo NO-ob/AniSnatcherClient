@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller"
+            prefHeight="600.0" prefWidth="900.0" >
+
+    <TabPane fx:id="tabPane">
+        <tabs>
+            <Tab fx:id="searchTab" text="Search">
+                <content>
+                    <fx:include fx:id="searchTabPage" source="SearchTab.fxml"/>
+                </content>
+            </Tab>
+            <Tab fx:id="libraryTab" text="Library">
+                <content>
+                    <fx:include fx:id="libraryTabPage" source="LibraryTab.fxml"/>
+                </content>
+            </Tab>
+            <Tab fx:id="torrentsTab" text="Torrents">
+                <content>
+                        <fx:include fx:id="torrentTabPage" source="TorrentTab.fxml"/>
+                </content>
+            </Tab>
+        </tabs>
+    </TabPane>
+</VBox>
